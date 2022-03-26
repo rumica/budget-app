@@ -2,8 +2,8 @@ import React from 'react'
 
 function Header({ budget }) {
   return (
-    <div>
-        Budget: ${budget} 
+    <div className='header'>
+        <div className="budget">Budget: <span>${budget}</span> </div>
     </div>
   )
 }
