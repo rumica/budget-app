@@ -1,12 +1,18 @@
-import React, { useState, useEffect } from 'react'
+import React, { useContext } from 'react'
+import ListItem from './ListItem.js'
+import { GlobalContext } from '../../context/GlobalState'
 import '../../style.css'
 
 function List() { 
 
+  const { transactions } = useContext(GlobalContext)
+
   return (
     <div className="container">
         <ul>
-            <li>Shopping <span>-$220</span><button>x</button></li>
+          {transactions.map(item => (
+            <ListItem key={item.id} item={item}/>
+          ))}
         </ul>
     </div>
   )

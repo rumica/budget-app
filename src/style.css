@@ -93,3 +93,43 @@
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   font-size: 22px;
 }
+
+li {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 300px;
+  height: 45px;
+  background-color: #F4F6F6;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.expense span {
+  background-color: #f77061;
+  padding: 5px;
+  border-radius: 12px;
+  color: white;
+}
+
+.income span {
+  background-color: #58D68D;
+  padding: 5px;
+  border-radius: 12px;
+  color: white;
+}
+
+
+li button {
+  background-color: #C39BD3;
+  text-align: center;
+   border-radius: 5px;
+   outline: none;
+   width: 40px;
+   border: none;
+   cursor: pointer;
+   color: white;
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   font-size: 18px;
+}
