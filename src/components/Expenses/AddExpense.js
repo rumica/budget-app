@@ -2,47 +2,30 @@ import React, { useState, useEffect } from 'react'
 
 function AddExpense({ expenses, setExpenses }) {
 
-    const [form, setForm] = useState({title: '', price: ''})
-
-    useEffect(() => {
-        setForm({title: '', price: ''})
-    }, [expenses])
-
-    const onChangeInput = (e) => {
-        setForm({ ...form, [e.target.name]: e.target.value})
-    }
-
-    const onSubmit = (e) => {
-        e.preventDefault()
-
-        if(form.title === '' || form.price === '' ){
-            return false
-        }
-        
-        setExpenses((prev) => [...prev, form])
-    }
-
-    useEffect(() => {
-        console.log(expenses)
-    },[expenses])
+    const [text, setText] = useState('')
+    const [amount, setAmount] = useState(0)
 
   return (
-    <form onSubmit={onSubmit}>
+   <div>
+        <h2>Add new expense</h2>
+        <form>
         <input 
-        name="title" 
-        value={form.title}
-        placeholder="Your title" 
-        onChange={onChangeInput}/>
+        type="text"
+        value={text}
+        id="text"
+        placeholder="Your title"
+        onChange={(e) => setText(e.target.value)} />
 
         <input 
-        name="price" 
         type="number"
-        value={form.price}
+        value={amount}
+        id="amount"
         placeholder="Your expense" 
-        onChange={onChangeInput}/>
+        onChange={(e) => setAmount(e.target.value)} />
 
         <button>Add Expense</button>
     </form>
+   </div>
   )
 }
 

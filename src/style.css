@@ -10,14 +10,15 @@
  body {
    display: flex;
    justify-content: center;
-   background-color: #F5FDFB;
+   align-items: center;
+   background-color: #F2F3F4;
  }
 
  .header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 644px;
     height: 100px;
  }
 
@@ -38,11 +39,57 @@
 
  form input {
    padding: 5px;
-   height: 35px;
+   height: 50px;
    margin-right: 10px;
    outline: none;
+   border-radius: 5px;
+   border: none;
+   font-size: 18px;
  }
 
  form input:first-child {
    width: 250px;
  }
+
+ form button {
+   background-color: #C39BD3;
+   border-radius: 5px;
+   outline: none;
+   width: 150px;
+   border: none;
+   cursor: pointer;
+   color: white;
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   font-size: 18px;
+ }
+
+ form button:hover {
+   transform: scale(1.1);
+   background-color: #9B59B6;
+ }
+
+.filter-expenses {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 100%;
+  height: 50px;
+  margin-right: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.expenses-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  height: 50px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  background-color: #D6DBDF;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  font-size: 22px;
+}

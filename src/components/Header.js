@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-function Header({ budget }) {
+function Header({ total, budget, setBudget }) {
+
   return (
     <div className='header'>
-        <div className="budget">Budget: <span>${budget}</span> </div>
+        Budget Tracker
     </div>
   )
 }
