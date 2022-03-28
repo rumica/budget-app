@@ -4,7 +4,7 @@ function Header({ total, budget, setBudget }) {
 
   return (
     <div className='header'>
-        Budget Tracker
+        <h1>BUDGET TRACKER</h1>
     </div>
   )
 }

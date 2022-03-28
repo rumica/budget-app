@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../../context/GlobalState'
+import '../../style.css'
 
 function IncomeExpenses() {
 
@@ -18,13 +19,13 @@ function IncomeExpenses() {
   .toFixed(2)
 
   return (
-    <div>
-        <div>
-            <h2>INCOME</h2>
+    <div className='income-expense-container'>
+        <div className='incomes'>
+            <h3>INCOME</h3>
             <p>${income}</p>
         </div>
-        <div>
-            <h2>EXPENSE</h2>
+        <div className='expenses'>
+            <h3>EXPENSE</h3>
             <p>${expense}</p>
         </div>
     </div>

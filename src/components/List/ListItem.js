@@ -11,7 +11,7 @@ function ListItem({ item }) {
   return (
     <li className={item.amount < 0 ? 'expense' : 'income'}>
         {item.text} <span>{checkSign}${Math.abs(item.amount)}</span>
-        <button onClick={() => deleteAction(item.id)}>x</button>
+        <button onClick={() => deleteAction(item.id)}>X</button>
     </li>
   )
 }
